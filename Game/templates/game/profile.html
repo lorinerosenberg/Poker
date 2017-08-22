@@ -1,0 +1,14 @@
+{% extends 'game/base.html' %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+    <main>
+        <div><img src = "{{ account.profile_picture.url }}"></div>
+        <div>{{ user.first_name }} {{ user.last_name}}</div>
+        <div>{{ user.country }}</div>
+        <div>{{ account.ranking }}</div>
+        <div>{{ account.chips }}</div>
+        <div>{{ account.status }}</div>
+    </main>
+
+
+{% endblock %}
