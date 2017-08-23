@@ -1,6 +1,7 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 p {
   font-size: 20px; }
@@ -128,7 +129,7 @@ img.img-header {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: 100px;
+  padding-top: 36px;
   padding-bottom: 50px;
   text-align: center;
   color: white;
@@ -138,7 +139,7 @@ header.masthead {
     margin: 0 auto 20px; }
   header.masthead .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 40px;
     font-weight: 700;
     display: block;
     text-transform: uppercase; }
@@ -151,7 +152,7 @@ header.masthead {
     padding-top: 200px;
     padding-bottom: 100px; }
     header.masthead .intro-text .name {
-      font-size: 4.75em; }
+      font-size: 2.75em; }
     header.masthead .intro-text .skills {
       font-size: 1.75em; } }
 
@@ -177,19 +178,395 @@ header.masthead {
     background: white; }
 
 
+
 button.newGame {
     display: inline-block;
     font-family: Lato;
-    font-size: 21px;
+    font-size: 18px;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-weight: 900;
     border-radius: 10px;
     background-color: red;
     border-color: red;
+    margin-top: 14px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 span.skills {
     display: inherit;
     padding-top: 14px;
+}
+a.nav-link.js-scroll-trigger.logout {
+    font-size: 10px;
+    padding-left: 39px;
+    padding-top: 13px;
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+.flipped{
+	background-position: -158px -492px;
+}
+
+
+.card {
+    background-image: url("img/cards.png");
+    float: left;
+    height: 123px;
+    width: 79px;
+}
+
+
+.ace-of-clubs{
+	background-position: 0 0;
+}
+
+.two-of-clubs{
+	background-position: -79px 0;
+}
+
+.three-of-clubs{
+	background-position: -158px 0;
+}
+
+.four-of-clubs{
+	background-position: -237px 0;
+}
+
+.five-of-clubs{
+	background-position: -316px 0;
+}
+
+.six-of-clubs{
+	background-position: -395px 0;
+}
+
+.seven-of-clubs{
+	background-position: -474px 0;
+}
+
+.eight-of-clubs{
+	background-position: -553px 0;
+}
+
+.nine-of-clubs{
+	background-position: -632px 0;
+}
+
+.ten-of-clubs{
+	background-position: -711px 0;
+}
+
+.jack-of-clubs{
+	background-position: -790px 0;
+}
+
+.queen-of-clubs{
+	background-position: -869px 0;
+}
+
+.king-of-clubs{
+	background-position: -948px 0;
+}
+
+.ace-of-spades{
+	background-position: 0 -123px;
+}
+
+.two-of-spades{
+	background-position: -79px -123px;
+}
+
+.three-of-spades{
+	background-position: -158px -123px;
+}
+
+.four-of-spades{
+	background-position: -237px -123px;
+}
+
+.five-of-spades{
+	background-position: -316px -123px;
+}
+
+.six-of-spades{
+	background-position: -395px -123px;
+}
+
+.seven-of-spades{
+	background-position: -474px -123px;
+}
+
+.eight-of-spades{
+	background-position: -553px -123px;
+}
+
+.nine-of-spades{
+	background-position: -632px -123px;
+}
+
+.ten-of-spades{
+	background-position: -711px -123px;
+}
+
+.jack-of-spades{
+	background-position: -790px -123px;
+}
+
+.queen-of-spades{
+	background-position: -869px -123px;
+}
+
+.king-of-spades{
+	background-position: -948px -123px;
+}
+
+
+
+/* Hearts */
+.ace-of-hearts{
+	background-position: 0 -246px;
+}
+
+.two-of-hearts{
+	background-position: -79px -246px;
+}
+
+.three-of-hearts{
+	background-position: -158px -246px;
+}
+
+.four-of-hearts{
+	background-position: -237px -246px;
+}
+
+.five-of-hearts{
+	background-position: -316px -246px;
+}
+
+.six-of-hearts{
+	background-position: -395px -246px;
+}
+
+.seven-of-hearts{
+	background-position: -474px -246px;
+}
+
+.eight-of-hearts{
+	background-position: -553px -246px;
+}
+
+.nine-of-hearts{
+	background-position: -632px -246px;
+}
+
+.ten-of-hearts{
+	background-position: -711px -246px;
+}
+
+.jack-of-hearts{
+	background-position: -790px -246px;
+}
+
+.queen-of-hearts{
+	background-position: -869px -246px;
+}
+
+.king-of-hearts{
+	background-position: -948px -246px;
+}
+
+
+/* Diamonds */
+.ace-of-diamonds{
+	background-position: 0 -369px;
+}
+
+.two-of-diamonds{
+	background-position: -79px -369px;
+}
+
+.three-of-diamonds{
+	background-position: -158px -369px;
+}
+
+.four-of-diamonds{
+	background-position: -237px -369px;
+}
+
+.five-of-diamonds{
+	background-position: -316px -369px;
+}
+
+.six-of-diamonds{
+	background-position: -395px -369px;
+}
+
+.seven-of-diamonds{
+	background-position: -474px -369px;
+}
+
+.eight-of-diamonds{
+	background-position: -553px -369px;
+}
+
+.nine-of-diamonds{
+	background-position: -632px -369px;
+}
+
+.ten-of-diamonds{
+	background-position: -711px -369px;
+}
+
+.jack-of-diamonds{
+	background-position: -790px -369px;
+}
+
+.queen-of-diamonds{
+	background-position: -869px -369px;
+}
+
+.king-of-diamonds{
+	background-position: -948px -369px;
+}
+
+h4.dealerHeading {
+    font-size: 15px;
+    margin-top: 59px;
+    margin-right: 60px;
+    margin-left: 35px;
+}
+
+h4.playerHeading {
+    font-size: 15px;
+    margin-top: 66px;
+    margin-right: 60px;
+    margin-left: 35px;
+}
+.row {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.betting-table.col-md-3 {margin-top: 13%;text-align: center;}
+
+div#bet {
+    text-align: center;
+    padding-bottom: 11px;
+    padding-top: 2px;
+    font-size: 20px;
+}
+button.betbtn {
+    display: inline-block;
+    margin: 17px;
+    width: 48px;
+    font-size: 22px;
+    padding: 0;
+}
+
+div#bet {
+    display: inline-block;
+}
+.gameaction {
+    margin-bottom: 50px;
+}
+
+button.btnaction {
+    display: inline-block;
+    margin: 17px;
+    width: 92px;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 10px;
+}
+div#money {
+    font-size: 20px;
+    padding-top: 14px;
+    font-weight: 900;
+}
+div#hit {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+div#stand {
+    cursor: pointer;
+    font-size: 20px;
+}
+#hit:hover{
+      color: #18BC9C;
+}
+#stand:hover{
+      color: #18BC9C;
+}
+span#less {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+span#more {
+    font-size: 35px;
+    cursor: pointer;
+}
+div#bet {
+    padding: 14px;
+}
+#less:hover{
+    color: #18BC9C;
+}
+#more:hover{
+    color: #18BC9C;
+}
+
+.collapseForm{
+    display: none;
+}
+h1.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 29px;
+}
+
+img.profile_pic {
+    width: 200px;
+}
+.profinfo {
+    text-align: center;
+}
+
+img.profile_pic {
+    margin: 19px;
+}
+
+.country {
+    padding: 5px;
+}
+
+.firstname {
+    padding: 5px;
+}
+
+.chips {
+    padding: 10px;
+}
+.editprofile {
+    text-align: center;
+    margin-top: 28px;
+}
+button#collapse {
+    margin-bottom: 100px;
+}
+header.masthead {
+    padding-top: 20px;
+}
+h1.logout {
+    text-align: center;
+    margin: 10%;
+    font-size: 39px;
 }
