@@ -1,0 +1,47 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+{% block title %}Game{% endblock %}
+{% block content %}
+    <div class = "container">
+        <div class = "row">
+            <div class = "betting-table col-md-3">
+                <h4>Your Bet</h4>
+                <span id='more'>+</span>
+                <div id = 'bet' class = 'bet-money'>0</div>
+                <span id='less'>-</span>
+            </div>
+            <div class = "col-md-6">
+                <div class = "row">
+                    <h4 class="dealerHeading"> Dealer's Cards </h4>
+                    <div class='dealer-cards'>
+                        <div class='card card1'></div>
+                        <div class='card flipped card2'></div>
+                        <div class='new-cards'></div>
+                        <div id='dealerTotal' class='dealer-total'></div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <h4 class = "playerHeading"> Player's Cards </h4>
+                    <div class='player-cards'>
+                        <div class='card card1'></div>
+                        <div class='card card2'></div>
+                        <div class='new-cards'></div>
+                        <div id='playerTotal' class='player-total'></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "betting-table col-md-3">
+                <h4>Available Chips</h4>
+                <div id='money' class='money'>500</div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class='buttons gameaction'>
+                    <span id='hit'><button class = "btnaction">Hit</button></span>
+        		    <span id='stand'><button class = "btnaction">Stand</button></span>
+    	        </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

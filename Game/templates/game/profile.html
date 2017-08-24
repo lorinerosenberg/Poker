@@ -2,13 +2,42 @@
 {% block title %}Profile{% endblock %}
 {% block content %}
     <main>
-        <div><img src = "{{ account.profile_picture.url }}"></div>
-        <div>{{ user.first_name }} {{ user.last_name}}</div>
-        <div>{{ user.country }}</div>
-        <div>{{ account.ranking }}</div>
-        <div>{{ account.chips }}</div>
-        <div>{{ account.status }}</div>
+    <h1 class = "heading">Welcome to your Profile {{ user.userprofile.first_name }}</h1>
+        <div class = profinfo>
+            <div class = "profile_pic"><img class = "profile_pic" src = '{{ user.userprofile.profile_pic_url }}'></div>
+            <div class = "username">Username:   {{ user }}</div>
+            <div class = "country">Country:   {{ user.userprofile.country }}</div>
+            <div class = "firstname">Name:   {{ user.userprofile.first_name }} {{ user.userprofile.last_name }}</div>
+            <div class = chips>Chips:   {{ user.userprofile.chips }}</div>
+        </div>
+
+
+    <div class = "col-md-12 col-sm-12 editprofile">
+        <button class="btn btn-success" id = "collapse">Create/Edit Account</button>
+            <div class = "panel panel-default">
+                <div class = "panel-body">
+                    <form class = "form1 form-horizontal collapseForm" action = "" method="post">
+                        <h4>Profile Info: </h4>
+                        {% csrf_token %}
+                        {% include 'game/form-template.html'%}
+                        <div class = "form-group">
+                            <div class = "col-sm-12">
+                                <button type = "submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
     </main>
-
-
 {% endblock %}
+
+
+
+
+
+
+
