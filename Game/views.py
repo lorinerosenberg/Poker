@@ -34,7 +34,6 @@ class UserFormView(View):
             user.save()
             #authenticate user
             user = authenticate(username=username,password=password)
-
             if user is not None:
                 if user.is_active:
                     login(request, user)
@@ -53,6 +52,8 @@ def login_view(request):
             login(request,user)
             print(request.user.is_authenticated())
             return redirect('poker:profile')
+        else:
+            return render(request, 'game/login.html', {'form': form, 'context': 'Username and password do not match'})
     else:
         return render(request, 'game/login.html', {'form': form})
 
@@ -78,8 +79,6 @@ def profile(request):
     else:
         form = CreateProfileForm(instance=profile)
     return render(request, 'game/profile.html', {"form":form,'user':request.user})
-
-
 
 
 @login_required(login_url='/login/')
