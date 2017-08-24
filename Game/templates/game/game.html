@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class = "row">
-                    <h4 class = "playerHeading"> Player's Cards </h4>
+                    <h4 class = "playerHeading"> {{ user }}'s Cards </h4>
                     <div class='player-cards'>
                         <div class='card card1'></div>
                         <div class='card card2'></div>
@@ -32,7 +32,7 @@
             </div>
             <div class = "betting-table col-md-3">
                 <h4>Available Chips</h4>
-                <div id='money' class='money'>500</div>
+                <div id='money' class='money'>{{ user.userprofile.chips }}</div>
             </div>
         </div>
         <div class = "row">

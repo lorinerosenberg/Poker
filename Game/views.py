@@ -84,6 +84,6 @@ def profile(request):
 
 @login_required(login_url='/login/')
 def game(request):
-    return render(request, 'game/game.html')
+    return render(request, 'game/game.html', {'user':request.user})
 
 
